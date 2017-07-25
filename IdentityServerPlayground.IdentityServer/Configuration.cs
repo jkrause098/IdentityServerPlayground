@@ -1,6 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Security.Claims;
 using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
@@ -13,7 +12,8 @@ namespace IdentityServerPlayground
         {
             return new List<ApiResource>
             {
-                new ApiResource("api_playground_1", "Playground API")
+                new ApiResource("api_playground_1", "Playground API #1"),
+                new ApiResource("api_playground_2", "Playground API #2")
             };
         }
 
@@ -30,7 +30,12 @@ namespace IdentityServerPlayground
                     RequireConsent = true, // Not really needed if you're doing a custom deal, but nice to have.
 
                     // Impicit Grant
-                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
 
                     // where to redirect to after login
                     RedirectUris = { "http://localhost:61802/signin-oidc" },
@@ -42,8 +47,11 @@ namespace IdentityServerPlayground
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
-                    }
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api_playground_1"
+                    },
+
+                    AllowOfflineAccess = true
                 }
             };
         }
@@ -56,13 +64,23 @@ namespace IdentityServerPlayground
                 {
                     SubjectId = "1",
                     Username = "jason",
-                    Password = "password"
+                    Password = "password",
+                    Claims = new []
+                    {
+                        new Claim("name", "Jason"),
+                        new Claim("website", "https://jasonkrause.net")
+                    }
                 },
                 new TestUser
                 {
                     SubjectId = "2",
                     Username = "jeff",
-                    Password = "password"
+                    Password = "password",
+                    Claims = new []
+                    {
+                        new Claim("name", "Jeff"),
+                        new Claim("website", "https://smartaccessit.com")
+                    }
                 }
             };
         }

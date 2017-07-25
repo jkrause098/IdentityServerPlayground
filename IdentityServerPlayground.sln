@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerPlayground.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerPlayground.Client.WebSite1", "IdentityServerPlayground.Client.WebSite1\IdentityServerPlayground.Client.WebSite1.csproj", "{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerPlayground.Api.Playground_2", "IdentityServerPlayground.Api.Playground_2\IdentityServerPlayground.Api.Playground_2.csproj", "{660D84AA-0DCF-49B3-B001-85BFF2AE351B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

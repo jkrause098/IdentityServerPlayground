@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerPlayground.IdentityServer", "IdentityServerPlayground.IdentityServer\IdentityServerPlayground.IdentityServer.csproj", "{CD92616F-2C92-4A1C-8963-05741367F121}"
-EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IdentityServerPlayground.IdentityServer.Database", "IdentityServerPlayground.IdentityServer.Database\IdentityServerPlayground.IdentityServer.Database.sqlproj", "{10DCBF1B-67B1-4F69-A54C-C07B7E4F8DCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerPlayground.Api.Playground_1", "IdentityServerPlayground.Api.Playground_1\IdentityServerPlayground.Api.Playground_1.csproj", "{B719C73A-F245-4CE0-A70A-1668C180E21F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerPlayground.Client.WebSite1", "IdentityServerPlayground.Client.WebSite1\IdentityServerPlayground.Client.WebSite1.csproj", "{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerPlayground.Client.WebSite1", "IdentityServerPlayground.Client.WebSite1\IdentityServerPlayground.Client.WebSite1.csproj", "{F4C01DFC-EE7F-46E5-A003-4FC840185E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerPlayground.Api.Playground_2", "IdentityServerPlayground.Api.Playground_2\IdentityServerPlayground.Api.Playground_2.csproj", "{660D84AA-0DCF-49B3-B001-85BFF2AE351B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerPlayground.Api.Playground_2", "IdentityServerPlayground.Api.Playground_2\IdentityServerPlayground.Api.Playground_2.csproj", "{660D84AA-0DCF-49B3-B001-85BFF2AE351B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerPlayground.IdentityServer", "IdentityServerPlayground.IdentityServer\IdentityServerPlayground.IdentityServer.csproj", "{8F66E36A-32E2-471A-A86E-59A3CC30C089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CD92616F-2C92-4A1C-8963-05741367F121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD92616F-2C92-4A1C-8963-05741367F121}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD92616F-2C92-4A1C-8963-05741367F121}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD92616F-2C92-4A1C-8963-05741367F121}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10DCBF1B-67B1-4F69-A54C-C07B7E4F8DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10DCBF1B-67B1-4F69-A54C-C07B7E4F8DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DCBF1B-67B1-4F69-A54C-C07B7E4F8DCF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -41,6 +37,10 @@ Global
 		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660D84AA-0DCF-49B3-B001-85BFF2AE351B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F66E36A-32E2-471A-A86E-59A3CC30C089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F66E36A-32E2-471A-A86E-59A3CC30C089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F66E36A-32E2-471A-A86E-59A3CC30C089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F66E36A-32E2-471A-A86E-59A3CC30C089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

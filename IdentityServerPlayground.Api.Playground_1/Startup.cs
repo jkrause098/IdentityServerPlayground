@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,7 +40,13 @@ namespace IdentityServerPlayground.Api.Playground_1
                 Authority = "http://localhost:61800",
                 RequireHttpsMetadata = false,
 
-                ApiName = "api_playground_1"
+                ApiName = "api_playground_1",
+
+                EnableCaching = true,
+                CacheDuration = TimeSpan.FromMinutes(10),
+
+                AutomaticAuthenticate = true,
+                AutomaticChallenge = true
             });
 
             app.UseMvc();
